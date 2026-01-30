@@ -11,8 +11,8 @@ from airflow.operators.python import PythonOperator
 dag = DAG(
     dag_id="07_templated_query_ds",
     schedule_interval=timedelta(days=3),
-    start_date=dt.datetime(year=2019, month=1, day=1),
-    end_date=dt.datetime(year=2019, month=1, day=5),
+    start_date=dt.datetime(year=2026, month=1, day=1),
+    end_date=dt.datetime(year=2026, month=1, day=5),
 )
 
 fetch_events = BashOperator(
